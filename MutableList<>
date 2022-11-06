@@ -1,0 +1,30 @@
+//Mutable list can be modified 
+fun main() {
+   //Create a mutuable list
+   var myNames :MutableList<String> =mutableListOf("Edris" ,"Ussama" ,"Adam" ,"Amin" ,"Walid")
+   println("The names are :$myNames.")
+
+   //Add elements 
+   myNames.add("Achraf")
+   println("The new name is added :$myNames")
+   
+   //Add all function
+   var newNames =listOf("Mohssine" ,"Ayoub" ,"Ayman" ,"Oussama")
+   myNames.addAll(newNames)
+   println("The final names list is $myNames ")
+    
+   //Remove elements
+   myNames.remove("Oussama")
+   println("The list after removing :$myNames")
+   
+   //Removing using index
+   myNames.removeAt(7)
+   println("The list after removing :$myNames")
+   
+   //Clearing a list
+   println("The list now is cleared :${myNames.clear()}")
+   
+   //Checking if it's empty
+   println("Is the list Empty? ${myNames.isEmpty().}")
+   
+}
