@@ -1,0 +1,33 @@
+//Lists are immutable ,meaning they cannot add or be modified ,"READ-ONLY". 
+
+fun main() {
+    //Create a List 
+    var myNumbers: List<Int> =listOf(1 ,2 ,3 ,4 ,5 ,6)
+    println("This is my list of intergers : $myNumbers")
+
+    //Get list size
+    println("The list size is $myNumbers.size")
+    
+    //Access elements of the list
+    println("The second element is ${myNumbers[1]}.")   
+    println("The third element is ${myNumbers.get(2)}.")
+        
+    //Get the last and first element of the list
+    println("The first element is ${myNumbers.first()}.") 
+    println("The last element is ${myNumbers.last()}.")
+    
+    //Checking if the list contains
+    println("Is 4? in the list :${myNumbers.contains(4)}.")
+    println("Is 11? in the list :${myNumbers.contains(11)}.")
+    
+    println()
+    
+    var myFruits :List<String> =listOf("Orange" ,"Apple" ,"Kiwi" ,"Banana")
+    
+    //Reverse a list
+    println("The reverse list is :${myFruits.reversed()}.")
+    
+    //Sort a list
+    println("The sorted list is :${myFruits.sorted()}.")
+    
+}
