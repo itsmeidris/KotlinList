@@ -1,0 +1,21 @@
+ //Maps ,collection type of <Key ,value> pairs.
+    
+    val solarSystem2 =mutableMapOf("Venus" to 0, "Earth" to 1, "Mars" to 2,
+    "Jupiter" to 79, "Saturn" to 82, "Uranus" to 27, "Neptune" to 14)
+    
+    println("The size of map is :${solarSystem2.size}")
+    
+    println("Adding Pluto :")
+    solarSystem2["Pluto"] =2
+    
+    //Checking if existing
+    println(solarSystem2["Theia"])
+    println(solarSystem2.get("Theia"))
+
+    solarSystem2.remove("Venus")
+    
+    //Modify map's value
+    solarSystem2["Jupiter"] =78
+    solarSystem2.put("Jupiter" ,79) 
+    
+    println(solarSystem2)
